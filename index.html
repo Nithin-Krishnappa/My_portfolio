@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My portfolio</title>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- FAVICON -->
+  <link class="favicon" rel="icon" type="image/img" sizes="32x32" href="images/favicon-32x32.png">
+
+  <!-- Google material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+   <!-- CSS -->
+  <link rel="stylesheet" href="index.css" />
+
+   <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/{{YOUR KIT KEY}}.js" crossorigin="anonymous"></script>
+
+   <!-- TYPE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <!-- jQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <!-- SWEET ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <!-- EMAIL JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("{{YOUR USER KEY}}");
+    })();
+  </script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">My<span> portfolio</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">Home</a></li>
+          <li><a href="#about" class="menu-btn">About</a></li>
+          <li><a href="#services" class="menu-btn">Services</a></li>
+          <li><a href="#skills" class="menu-btn">Skills</a></li>
+          <li><a href="#contact" class="menu-btn">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="material-icons">menu</i>
+        </div>
+      </div>
+    </nav>
+  <!-- Scroll to top button -->
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+    
+  <!-- home section start-->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1" data-aos="fade-up">Hello, my name is</div>
+        <div class="text-2">NITHIN K</div>
+        <div class="text-3">Im a software engineer <span class="typing"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down" >About Me</h2>
+      <div class="about-content">
+        <div class="column left" data-aos="fade-right" >
+          <img src="images/P3021961.jpg" alt="" />
+        </div>
+        <div class="column right" data-aos="fade-up">
+          <div class="text">
+            I'm Nithin k and I'm a software engineer <span class="typing-2"></span>
+          </div>
+          <p class="paragraph">
+            Hello! My name is Nithin k, and I'm currently a third-year engineering student at Dayananda Sagar Academy of Technology and Management, majoring in CSE. Originally from Malur, I have always been passionate about solving complex problems and creating innovative solutions, which naturally led me to pursue a career in engineering.
+          </p>
+          <a href="https://drive.google.com/file/d/1L5YAMg-7EmsfzL0e3yy_oz2QPbUSOR9c/view">Download
+            Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">My Projects</h2>
+      <div class="serv-content">
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-laptop-code"></i>
+            <div class="text">CORONA CASES ANALYSIS</div>
+            <p>
+              COVID-19 case analysis involves collecting and examining data on case numbers, demographics, geographic spread, testing, and vaccinations. Key metrics like the reproduction number (R0) and case fatality rate (CFR) are analyzed using statistical, geospatial, and predictive modeling techniques. This analysis helps inform public health strategies, assess intervention effectiveness, and guide resource allocation.
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-code"></i>
+            <div class="text">TEXT SUMMARIZER</div>
+            <p>
+              A text summarizer automatically condenses a longer text into its essential points using techniques like extractive or abstractive summarization. It saves time and enhances productivity by providing concise summaries for quick comprehension, often using natural language processing and machine learning algorithms.
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="text">WHOLE SALE INVENTARY</div>
+            <p>
+              Wholesale inventory refers to the bulk stock of goods held by wholesalers for distribution and resale to retailers or other businesses. It involves managing large quantities of products, ensuring efficient storage, tracking, and timely replenishment to meet market demand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills section services -->
+  <section class="skills" id="skills">
+    <div class="max-width" data-aos="fade-down">
+      <h2 class="title" data-aos="fade-up">My Skills</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text">
+            My creative skills & experiences.
+          </div>
+          <p class="paragraph-2">
+            I have creative expertise in Python, C++, Java, C, HTML, and CSS, along with a solid understanding of data structures. I've applied these skills to develop dynamic web applications, elegant algorithms, and visually appealing user interfaces.
+          </p>
+          <a href="#about">Read More</a>
+        </div>
+        <div class="column right skill-box">
+          <div class="icons">
+            <img src="images\skill-icons\icons8-css3.svg" alt="css" id="css-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-javascript.svg" alt="js" id="js-icon" data-aos="flip-left">
+            
+          </div>
+          <div class="icons">
+            <img src="images\skill-icons\icons8-html-5.svg" alt="html", id="html-icon" data-aos="flip-left">
+            
+            <img src="images\skill-icons\icons8-visual-studio-code-2019.svg" alt="vscode" id="vscode-icon" data-aos="flip-left">
+            <img src="images\skill-icons\icons8-c++.svg" alt="c++" id="cpp-icon" data-aos="flip-left">
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">Contact Me</h2>
+      <div class="contact-content">
+        <div class="column left" data-aos="flip-left">
+          <div class="text">Let's Get in Touch</div>
+          <p class="paragraph-3">
+            I'm here whenever you need want to chat! Feel free to reach out anytime.
+          </p>
+          <div class="icons">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head">Name</div>
+                <div class="sub-title">Nithin k</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Address</div>
+                <div class="sub-title">siddanahalli alambady malur kolar</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <div class="head">Email</div>
+                <div class="sub-title">nithin.k.nithin07@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right" data-aos="flip-right">
+          <div class="text">
+            Message Me
+          </div>
+          <form action="#Contact">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" id="fromName" placeholder="Name" required autocomplete="off">
+              </div>
+              <div class="field email">
+                <input type="email" id="emailSender" placeholder="Email" required autocomplete="off">
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" id="subjectSender" placeholder="Subject" required autocomplete="off">
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" id="message" placeholder="Message" required autocomplete="off"></textarea>
+            </div>
+            <div class="button">
+              <button onclick='sendMail()' type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer section start -->
+  <footer>
+    <div class="text-center">
+      <span>
+        Created By <a href="#">Nithin k</a> | <span class="far fa-copyright"> </span> <script>document.write(new Date().getFullYear())</script> All rights reserved.
+        <div>
+          <a href="https://www.linkedin.com/in/nithin-k-16a264301/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Nithin-Krishnappa"><i class="fab fa-github"></i></a>
+          
+        </div>
+      </span>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({easing : 'ease-in',delay: 100,duration: 300,offset:100});window.addEventListener('load', AOS.refresh);</script>
+</body>
+
+</html>
