@@ -5,7 +5,7 @@ function sendMail(params){
         subject_sender: document.getElementById("subjectSender").value,
         message_sender: document.getElementById("message").value,
     };
-    emailjs.send('{{service_tiuxvvk}}',tempParams)
+    emailjs.send('',tempParams)
      .then(function(res){
         Swal.fire({
             position: 'center',
